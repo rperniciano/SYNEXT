@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  output: "export",
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
 
-const withVideos = require('next-videos')
+const withVideos = require("next-videos");
 
-module.exports = withVideos()
+module.exports = withVideos();
