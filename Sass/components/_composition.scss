@@ -1,0 +1,80 @@
+.composition{
+    position: relative;
+    &__photo{
+        width: 55%;
+        border-radius: 2px;
+        box-shadow: 0 1.5rem 4rem rgba($color-black, 0.4);
+        position: absolute;
+        z-index: 1;
+        transition: all .2s;
+        outline-offset: 2rem;
+        transform: scale(0.7);
+        
+        @include respond(tab-port){
+            float: left;
+            position: relative;
+            width: 33.3333333%;
+            box-shadow: 0 1.5rem 3rem rgba($color-black, 0.2);
+        }
+
+        &--p1{
+            left:0;
+            top:-5rem;
+            @include respond(tab-port){
+                top:0;
+                transform: scale(1.2);
+            }
+            @include respond(phone){
+                top:0;
+                transform: scale(1);
+            }
+        }
+        &--p2{
+            right:0;
+            top:-1rem;
+            @include respond(tab-port){
+                top:-2rem;
+                transform: scale(1.2);
+            }
+            @include respond(phone){
+                top:-2rem;
+                transform: scale(1);
+            }
+        }
+        &--p3{
+            left: 20%;
+            top: 5rem;
+            @include respond(tab-port){
+                top:0rem;
+                left: 0;
+                transform: scale(1.2);
+            }
+            @include respond(phone){
+                top:0rem;
+                left: 0;
+                transform: scale(1);
+            }
+        }
+
+        &:hover{
+            outline: 1.5rem solid $primary-color;
+            transform: scale(0.8) translateY(-.5rem);
+            z-index: 2;
+            box-shadow: 0 2.5rem 4rem rgba($color-black,.5);
+            @include respond(tab-port){
+                top:0rem;
+                left: 0;
+                transform: scale(1.2);
+            }
+            @include respond(phone){
+                top:0rem;
+                left: 0;
+                transform: scale(1);
+            }
+        }
+    }
+
+    &:hover &__photo:not(:hover){
+        transform: scale(.7);
+    }
+}

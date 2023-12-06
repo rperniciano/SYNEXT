@@ -1,6 +1,6 @@
-import Heading from "./heading";
-import Description from "./left-description";
-import Photos from "./photos";
+import Heading from "./private/heading";
+import Description from "./private/left-description";
+import Photos from "./private/photos";
 
 const WhoAreWe = () => {
   return (
@@ -8,7 +8,6 @@ const WhoAreWe = () => {
       <Heading></Heading>
       <div className="row">
         <Description></Description>
-        <Photos></Photos>
       </div>
     </section>
   );

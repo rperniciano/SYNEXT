@@ -4,13 +4,15 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
+    "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "compile:sass": "node-sass Sass/main.scss css/style.css -w"
   },
   "dependencies": {
     "next": "14.0.3",
     "next-videos": "1.4.1",
+    "node-sass": "^9.0.0",
     "react": "^18",
     "react-dom": "^18"
   },

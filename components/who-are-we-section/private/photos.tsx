@@ -1,6 +1,6 @@
-import Foto1 from "./image/1.jpg";
-import Foto2 from "./image/2.jpg";
-import Foto3 from "./image/3.jpg";
+import Foto1 from "../image/1.jpg";
+import Foto2 from "../image/2.jpg";
+import Foto3 from "../image/3.jpg";
 import Image from "next/image";
 
 const Photos = () => {

@@ -4,13 +4,13 @@ import MenusLogo from "./menu/logo";
 
 const Header = () => {
   return (
-    <>
+    <section>
       <header id="header" className="header">
         <MenusLogo></MenusLogo>
         <HeaderText></HeaderText>
         <IntroVideo></IntroVideo>
       </header>
-    </>
+    </section>
   );
 };
 
