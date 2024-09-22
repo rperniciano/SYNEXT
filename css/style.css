@@ -214,8 +214,8 @@ body {
       margin-right: 2rem !important; } }
 
 .u-margin-inline-small {
-  margin-left: 1rem !important;
-  margin-right: 1rem !important; }
+  margin-left: 2rem !important;
+  margin-right: 2rem !important; }
   @media (max-width: 56.25em) {
     .u-margin-inline-small {
       margin-left: 0.2rem !important;
@@ -489,8 +489,8 @@ body {
   perspective: 150rem;
   -moz-perspective: 150rem;
   position: relative;
-  height: 38rem;
-  width: 24rem; }
+  width: calc(106.09585074%* max(1, var(--scale-fill, 1)));
+  height: calc(100% / min(1, var(--scale-fill, 1))); }
   .card__side {
     height: 48rem;
     transition: all .8s ease;

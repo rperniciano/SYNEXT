@@ -53,8 +53,8 @@
 }
 
 .u-margin-inline-small {
-  margin-left: 1rem !important;
-  margin-right: 1rem !important;
+  margin-left: 2rem !important;
+  margin-right: 2rem !important;
   @include respond(tab-port) {
     margin-left: 0.2rem !important;
     margin-right: 0.2rem !important;

@@ -2,49 +2,43 @@ import Immagine1 from "./image/automatizzainvestimenti.jpg";
 import Immagine2 from "./image/imparadaimigliori.jpg";
 import Immagine3 from "./image/costruisciunimpero.jpg";
 import Immagine4 from "./image/communityglobale.jpg";
-import Image from "next/image";
 import Heading from "./private/heading";
+import Card from "./private/card";
+import Image from "next/image";
 
 const WhySection = () => {
   return (
     <section className="section-features">
       <Heading></Heading>
       <div className="row row__flex u-margin-inline-big">
-        <div className="card u-margin-inline-small u-margin-top-big u-padding-inline-big">
-          <p className="card__heading">automatizza i tuoi investimenti</p>
+        <Card paragraph="Automatizza i tuoi investimenti">
           <Image
             src={Immagine1}
             alt="automatizza i tuoi investimenti"
             className="card__image"
           ></Image>
-        </div>
-
-        <div className="card u-margin-inline-small u-margin-top-big u-padding-inline-big">
-          <p className="card__heading">impara dai migliori</p>
+        </Card>
+        <Card paragraph="Impara dai migliori">
           <Image
             src={Immagine2}
-            alt="automatizza i tuoi investimenti"
+            alt="impara dai migliori"
             className="card__image"
           ></Image>
-        </div>
-
-        <div className="card u-margin-inline-small u-margin-top-big u-padding-inline-big">
-          <p className="card__heading">costruisci il tuo impero</p>
+        </Card>
+        <Card paragraph="costruisci il tuo impero">
           <Image
             src={Immagine3}
-            alt="automatizza i tuoi investimenti"
+            alt="costruisci il tuo impero"
             className="card__image"
           ></Image>
-        </div>
-
-        <div className="card u-margin-inline-small u-margin-top-big u-padding-inline-big">
-          <p className="card__heading">community globale</p>
+        </Card>
+        <Card paragraph="community globale">
           <Image
-            className="card__image"
             src={Immagine4}
-            alt="automatizza i tuoi investimenti"
+            alt="community globale"
+            className="card__image"
           ></Image>
-        </div>
+        </Card>
       </div>
     </section>
   );
