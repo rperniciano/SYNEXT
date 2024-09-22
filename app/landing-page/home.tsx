@@ -1,5 +1,6 @@
 import Header from "@/components/header/Header";
 import Navigation from "@/components/navigation/navigation";
+import Testimonials from "@/components/testimonial-section/testimonial";
 import WhoAreWe from "@/components/who-are-we-section/who-are-we";
 import WhySection from "@/components/why-section/why-section";
 
@@ -10,6 +11,7 @@ export default function HomePage() {
       <Header></Header>
       <WhoAreWe></WhoAreWe>
       <WhySection></WhySection>
+      <Testimonials></Testimonials>
     </div>
   );
 }

@@ -18,6 +18,18 @@
     }
 }
 
+.section-testimonials{
+    padding: 4em 0;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-color: $primary-color-dark;
+
+    @include respond(tab-port){
+        padding: 4rem 0;
+    }
+}
+
 .section-tours{
     background-color: $color-grey-light-1;
     padding: 25rem 0 15rem 0;

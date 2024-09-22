@@ -264,6 +264,16 @@ body {
     .section-features {
       padding: 4rem 0; } }
 
+.section-testimonials {
+  padding: 4em 0;
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  background-color: #111022; }
+  @media (max-width: 56.25em) {
+    .section-testimonials {
+      padding: 4rem 0; } }
+
 .section-tours {
   background-color: #f7f7f7;
   padding: 25rem 0 15rem 0;
@@ -1050,3 +1060,24 @@ body {
   width: calc(106.09585074%* max(1, var(--scale-fill, 1)));
   height: calc(100% / min(1, var(--scale-fill, 1)));
   opacity: 0.71; }
+
+.testimonial-card {
+  background-color: #f9ef23;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left; }
+  .testimonial-card__image {
+    width: 100%;
+    height: 100%; }
+
+.testimonial-text {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #000;
+  font-weight: 600;
+  padding: 3rem; }
+
+.testimonial-author {
+  color: #000;
+  font-weight: 600;
+  padding: 3rem; }
