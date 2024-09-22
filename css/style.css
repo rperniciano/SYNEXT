@@ -955,7 +955,7 @@ body {
 
 .navigation__link:hover, .navigation__link:active {
   background-position: 100%;
-  color: #f9ef23;
+  color: #111022;
   transform: translateX(1rem); }
 
 .navigation__checkbox:checked ~ .navigation__background {
