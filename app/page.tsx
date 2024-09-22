@@ -1,7 +1,9 @@
+import Wrapper from "./landing-page/page";
+
 export default function Router() {
   return (
     <main>
-      ciao
+      <Wrapper></Wrapper>
     </main>
   )
 }

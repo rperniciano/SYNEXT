@@ -8,38 +8,51 @@ body {
 
 .heading-primary{
     color: #fff;
+    font-family: "Anton", sans-serif;
+    font-style: italic;
     backface-visibility: hidden;
     margin-bottom: 6rem;
+
     &--main{
         display: block;
-        font-size: 7rem;
+        font-size: 8rem;
         font-weight: 600;
-        letter-spacing: 1rem;
+        color: #fff;
         animation-name: moveInLeft;
         animation-duration: 1s;
         animation-timing-function: ease-out;
+        line-height: 1.06450139em;
+        margin-bottom: 2rem;
+
+        &-yellow{
+            color: #f9ef23;
+            @include respond(phone){
+                font-size: 8rem;
+            }
+            @include respond(tab-port){
+                font-size: 8rem;
+            } 
+        }
 
         @include respond(phone){
-            letter-spacing: 1rem;
-            font-size: 9rem;
+            font-size: 8rem
         }
         @include respond(tab-port){
-            letter-spacing: 1rem;
-            font-size: 7rem;
-        }
+            font-size: 8rem
+        } 
     }
     &--sub{
         display: block;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: 400;
-        letter-spacing: .5rem;
         animation:moveInRight 1s ease-out;
         color:$color-white;
+        line-height: 1.14130311em;
 
         @include respond(phone){
-            letter-spacing: .5rem;
-            font-size: 3rem;
+            font-size: 4rem;
         }
+
 
         &-second{
             color:$color-grey-dark-3;
@@ -62,16 +75,27 @@ body {
 }
 
 .heading-secondary{
-    font-size: 7rem;
+    font-size: 8rem;
     text-transform: uppercase;
+    font-family: "Anton", sans-serif;
     font-weight: 700;
+    font-style: italic;
     display: inline-block;
-    background-image: linear-gradient(to right, $primary-color-light,$primary-color-dark);
+    color: $primary-color;
     -webkit-background-clip: text;
     letter-spacing: 0.2rem;
-    color: transparent;
     transition: all .2s;
 
+    &__centered{
+        text-align: center;
+        @include respond(tab-port){
+            text-align: center;
+        }
+    
+        @include respond(phone){
+            text-align: center;
+        }
+    }
     
 
     @include respond(tab-port){
@@ -92,11 +116,13 @@ body {
     font-size: $default-font-size;
     font-weight: 700;
     text-transform: uppercase;
+    color: $color-white;
 }
 
 .paragraph{
-    font-size: $default-font-size;
-
+    font-size: 3rem;
+    font-weight: 600;
+    color: $color-white;
     &:not(:last-child){
         margin-bottom: 3rem;
     }

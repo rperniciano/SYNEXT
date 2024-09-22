@@ -1,23 +1,11 @@
 const Description = () => {
   return (
-    <div className="col-1-of-2">
-      <h3 className="heading-tertiary u-margin-bottom-small">Chi siamo?</h3>
-      <p className="paragraph">
-        SYNERGY è la piattaforma ideale per i programmatori che desiderano
-        diversificare le loro fonti di reddito e raggiungere l'indipendenza
-        finanziaria. Con il nostro servizio di punta, SageMaster, potrai
-        sfruttare le tue competenze analitiche e la tua familiarità con i numeri
-        per navigare nel mercato forex. Grazie all'intelligenza artificiale,
-        SageMaster fornisce suggerimenti esperti che ti aiuteranno a gestire
-        rischio e profitto, permettendoti di generare un reddito passivo.
+    <div>
+      <p className="paragraph u-margin-bottom-small">
+      Ciao! Sono Riccardo e come te, passavo ore davanti allo schermo a scrivere codice. Capisco quanto sia stimolante creare qualcosa di nuovo, ma anche quanto possa essere frustrante quando ti trovi bloccato su un problema per ore. E poi, tra scadenze e progetti urgenti, trovare il tempo per pensare al tuo futuro può sembrare un'impresa impossibile.
       </p>
-
-      <h3 className="heading-tertiary u-margin-bottom-small">
-        LA nostra mission
-      </h3>
-      <p className="paragraph">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
-        nulla deserunt voluptatum nam.
+      <p className="paragraph u-margin-bottom-small">
+      Ecco perché ho deciso di collaborare con Onevision per offrirti SageMaster. Si tratta di una piattaforma innovativa che ti permette di investire in modo semplice e automatico, senza dover essere un esperto di finanza.
       </p>
     </div>
   );

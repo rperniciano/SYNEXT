@@ -1,55 +1,49 @@
+import Immagine1 from "./image/automatizzainvestimenti.jpg";
+import Immagine2 from "./image/imparadaimigliori.jpg";
+import Immagine3 from "./image/costruisciunimpero.jpg";
+import Immagine4 from "./image/communityglobale.jpg";
+import Image from "next/image";
+import Heading from "./private/heading";
+
 const WhySection = () => {
   return (
     <section className="section-features">
-      <div className="row">
-        <div className="col-1-of-4">
-          <div className="feature-box">
-            <i className="feature-box__icon icon-basic-world"></i>
-            <h3 className="heading-tertiary u-margin-bottom-small">
-              Explore the world
-            </h3>
-            <p className="feature-box__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              ipsum sapiente aspernatur.
-            </p>
-          </div>
+      <Heading></Heading>
+      <div className="row row__flex u-margin-inline-big">
+        <div className="card u-margin-inline-small u-margin-top-big u-padding-inline-big">
+          <p className="card__heading">automatizza i tuoi investimenti</p>
+          <Image
+            src={Immagine1}
+            alt="automatizza i tuoi investimenti"
+            className="card__image"
+          ></Image>
         </div>
 
-        <div className="col-1-of-4">
-          <div className="feature-box">
-            <i className="feature-box__icon icon-basic-compass"></i>
-            <h3 className="heading-tertiary u-margin-bottom-small">Meet nature</h3>
-            <p className="feature-box__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              ipsum sapiente aspernatur.
-            </p>
-          </div>
+        <div className="card u-margin-inline-small u-margin-top-big u-padding-inline-big">
+          <p className="card__heading">impara dai migliori</p>
+          <Image
+            src={Immagine2}
+            alt="automatizza i tuoi investimenti"
+            className="card__image"
+          ></Image>
         </div>
 
-        <div className="col-1-of-4">
-          <div className="feature-box">
-            <i className="feature-box__icon icon-basic-map"></i>
-            <h3 className="heading-tertiary u-margin-bottom-small">
-              Find your way
-            </h3>
-            <p className="feature-box__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              ipsum sapiente aspernatur.
-            </p>
-          </div>
+        <div className="card u-margin-inline-small u-margin-top-big u-padding-inline-big">
+          <p className="card__heading">costruisci il tuo impero</p>
+          <Image
+            src={Immagine3}
+            alt="automatizza i tuoi investimenti"
+            className="card__image"
+          ></Image>
         </div>
 
-        <div className="col-1-of-4">
-          <div className="feature-box">
-            <i className="feature-box__icon icon-basic-heart"></i>
-            <h3 className="heading-tertiary u-margin-bottom-small">
-              Live a healthier life
-            </h3>
-            <p className="feature-box__text">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam,
-              ipsum sapiente aspernatur.
-            </p>
-          </div>
+        <div className="card u-margin-inline-small u-margin-top-big u-padding-inline-big">
+          <p className="card__heading">community globale</p>
+          <Image
+            className="card__image"
+            src={Immagine4}
+            alt="automatizza i tuoi investimenti"
+          ></Image>
         </div>
       </div>
     </section>

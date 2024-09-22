@@ -1,8 +1,10 @@
 const ChiSiamoButton: React.FC = (): React.ReactElement => {
   return (
-    <a href="#section-about" className="btn btn--white btn--animated">
-      Chi Siamo?
-    </a>
+    <div>
+      <a href="#section-about" className="btn btn--yellow btn--animated">
+        prenota ora
+      </a>
+    </div>
   );
 };
 

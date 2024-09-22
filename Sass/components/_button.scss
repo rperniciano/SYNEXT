@@ -5,10 +5,12 @@
     text-transform: uppercase;
     text-decoration: none;
     padding: 1.5rem 4rem;
-    display: inline-block;
+    display: flex;
     border-radius: 10rem;
     transition: all 0.2s;
     position: relative;
+    font-weight: 600;
+    margin-bottom: 8rem;
     @include respond(phone) {
       font-size: 3rem;
     }
@@ -60,9 +62,9 @@
     }
   }
 
-  &-green {
+  &--yellow {
     background-color: $primary-color;
-    color: $color-white;
+    color: $color-black;
     &::after {
       background-color: $primary-color;
     }
@@ -111,7 +113,7 @@
 
   &:hover {
     background-color: $primary-color;
-    color: white;
+    color: black;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
     transform: translate(-3px);
   }

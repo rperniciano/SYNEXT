@@ -1,6 +1,15 @@
 .row {
     margin: 0 auto;
 
+    &__flex{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include respond(tab-port) {
+            flex-wrap: wrap;
+        }
+    }
+
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
 
@@ -19,7 +28,7 @@
         float: left;
 
         &:not(:last-child) {
-            margin-right: $gutter-horizontal;
+            margin-right: 3rem;
 
             @include respond(tab-port) {
                 margin-right: 0;
