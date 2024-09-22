@@ -10,7 +10,7 @@ const WhySection = () => {
   return (
     <section className="section-features">
       <Heading></Heading>
-      <div className="row row__flex u-margin-inline-big">
+      <div className="row row__flex u-margin-inline-small">
         <Card paragraph="Automatizza i tuoi investimenti">
           <Image
             src={Immagine1}
