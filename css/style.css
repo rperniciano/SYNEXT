@@ -161,7 +161,7 @@ body {
   color: white; }
 
 .paragraph {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 600;
   color: white; }
   .paragraph:not(:last-child) {
