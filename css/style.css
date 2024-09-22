@@ -161,11 +161,14 @@ body {
   color: white; }
 
 .paragraph {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   color: white; }
   .paragraph:not(:last-child) {
     margin-bottom: 3rem; }
+  @media (max-width: 56.25em) {
+    .paragraph {
+      font-size: 4rem; } }
 
 .u-center-text {
   text-align: center !important; }

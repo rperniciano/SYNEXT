@@ -120,10 +120,13 @@ body {
 }
 
 .paragraph{
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: 600;
     color: $color-white;
     &:not(:last-child){
         margin-bottom: 3rem;
+    }
+    @include respond(tab-port){
+        font-size: 4rem;
     }
 }
