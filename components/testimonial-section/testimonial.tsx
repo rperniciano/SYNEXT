@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Card from "./private/card";
 import Heading from "./private/heading";
-import Immagine1 from "./image/automatizzainvestimenti.jpg";
-import Immagine2 from "./image/communityglobale.jpg";
-import Immagine3 from "./image/costruisciunimpero.jpg";
+import Immagine1 from "./image/ciano.jpg";
+import Immagine2 from "./image/federica lin.jpg";
+import Immagine3 from "./image/michi deiana.png";
 import Immagine4 from "./image/foto curriculum.jpg";
 
 const Testimonials = () => {
@@ -36,7 +36,7 @@ const Testimonials = () => {
           author="Riccardo Perniciano, 25"
         >
           <Image
-            src={Immagine4}
+            src={Immagine1}
             alt="Riccardo Perniciano"
             className="testimonial-card__image"
           ></Image>
