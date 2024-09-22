@@ -100,10 +100,9 @@
 }
 
 .btn-text {
+  text-decoration: underline;
   &:link,
   &:visited {
-    font-size: $default-font-size;
-    color: $primary-color;
     display: inline-block;
     text-decoration: none;
     border-bottom: 1px solid $primary-color;

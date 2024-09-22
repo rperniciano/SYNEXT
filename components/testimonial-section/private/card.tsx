@@ -9,7 +9,9 @@ const Card = ({ paragraph, children, author }: Props) => {
     <div className="testimonial-card u-margin-inline-small u-margin-top-big">
       {children}
       <p className="testimonial-text">{paragraph}</p>
-      <p className="testimonial-author">{author}</p>
+      <div className="testimonial-author">
+        <p className="btn-text">{author}, full story</p>
+      </div>
     </div>
   );
 };
