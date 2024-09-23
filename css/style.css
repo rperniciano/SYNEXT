@@ -771,7 +771,7 @@ body {
     align-items: flex-start; }
   .form__radio-label {
     cursor: pointer;
-    font-size: 1.6rem;
+    font-size: 2rem;
     position: relative;
     padding-left: 4rem;
     color: white; }
