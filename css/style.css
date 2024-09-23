@@ -880,7 +880,7 @@ body {
   background-position: top;
   position: relative;
   background-color: #141414;
-  opacity: 1.0; }
+  opacity: 1; }
   @media (max-width: 37.5em) {
     .header {
       min-height: 600px; } }
@@ -894,11 +894,18 @@ body {
     opacity: 0.63; }
   .header__logo-box {
     position: absolute;
-    top: 4rem;
+    top: 1rem;
     left: 4rem; }
+    @media (max-width: 56.25em) {
+      .header__logo-box {
+        top: 0rem; } }
   .header__logo {
-    height: 5rem;
-    width: 5rem; }
+    height: 12rem;
+    width: 12rem; }
+    @media (max-width: 56.25em) {
+      .header__logo {
+        height: 15rem;
+        width: 15rem; } }
   .header__text-box {
     z-index: 10;
     text-align: center;
