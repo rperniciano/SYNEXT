@@ -80,6 +80,9 @@
     position: relative;
     padding-left: 4rem;
     color: $color-white;
+    @include respond(tab-port){
+        font-size: 3rem;
+    }
   }
 
   &__radio-button {
