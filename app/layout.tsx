@@ -5,8 +5,8 @@ import "../css/style.css"
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Synergy',
-  description: 'Synergy',
+  title: 'OV',
+  description: 'OV',
 }
 
 export default function RootLayout({
