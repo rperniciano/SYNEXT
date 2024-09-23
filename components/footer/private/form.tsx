@@ -20,7 +20,7 @@ const Form = () => {
           />
           <label className="form__label">Numero Telefonico</label>
         </div>
-        <p className="heading-tertiary u-align-start u-margin-bottom-small">Come ci hai conosciuto? </p>
+        <p className="heading-tertiary u-align-start u-margin-bottom-medium">Come ci hai conosciuto? </p>
         <div className="form__radio-group">
           <div className="u-margin-bottom-medium">
             <input
