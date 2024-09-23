@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/footer";
 import Header from "@/components/header/Header";
 import Navigation from "@/components/navigation/navigation";
 import Testimonials from "@/components/testimonial-section/testimonial";
@@ -12,6 +13,7 @@ export default function HomePage() {
       <WhoAreWe></WhoAreWe>
       <WhySection></WhySection>
       <Testimonials></Testimonials>
+      <Footer></Footer>
     </div>
   );
 }

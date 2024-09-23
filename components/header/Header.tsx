@@ -1,5 +1,4 @@
 import HeaderText from "./header-text/header-text";
-import IntroVideo from "./hero/IntroVideo";
 import MenusLogo from "./menu/logo";
 import Image from "next/image";
 import Sfondo from "./menu/image/headerimg.jpg";
