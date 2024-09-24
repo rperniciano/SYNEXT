@@ -782,15 +782,12 @@ body {
     height: 3rem;
     width: 3rem;
     border: 5px solid #f9ef23;
-    border-radius: 50%;
     display: inline-block;
     position: absolute;
-    top: -0.4rem;
     left: 0; }
     .form__radio-button::after {
       content: "";
       display: block;
-      border-radius: 50%;
       height: 1.2rem;
       width: 1.2rem;
       position: absolute;

@@ -8,7 +8,7 @@ import WhySection from "@/components/why-section/why-section";
 export default function HomePage() {
   return (
     <div className="App">
-      <Navigation></Navigation>
+      {/* <Navigation></Navigation> */}
       <Header></Header>
       <WhoAreWe></WhoAreWe>
       <WhySection></WhySection>

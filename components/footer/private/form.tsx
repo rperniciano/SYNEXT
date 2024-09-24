@@ -20,38 +20,43 @@ const Form = () => {
           />
           <label className="form__label">Numero Telefonico</label>
         </div>
-        <p className="heading-tertiary u-align-start u-margin-bottom-medium">Come ci hai conosciuto? </p>
-        <div className="form__radio-group">
-          <div className="u-margin-bottom-medium">
+        <p className="heading-tertiary u-align-start u-margin-bottom-medium">
+          Come ci hai conosciuto?{" "}
+        </p>
+        <div className="form__group">
+          <div className="u-margin-bottom-medium form__radio-group">
             <input
               type="radio"
               className="form__radio-input"
               name="size"
               id="small"
+              required
             />
             <label className="form__radio-label">
               <span className="form__radio-button"></span>
               Tik Tok
             </label>
           </div>
-          <div className="u-margin-bottom-medium">
+          <div className="u-margin-bottom-medium form__radio-group">
             <input
               type="radio"
               className="form__radio-input"
               name="size"
-              id="small"
+              id="medium"
+              required
             />
             <label className="form__radio-label">
               <span className="form__radio-button"></span>
               Instagram
             </label>
           </div>
-          <div className="u-margin-bottom-medium">
+          <div className="u-margin-bottom-medium form__radio-group">
             <input
               type="radio"
               className="form__radio-input"
               name="size"
-              id="small"
+              id="large"
+              required
             />
             <label className="form__radio-label">
               <span className="form__radio-button"></span>
