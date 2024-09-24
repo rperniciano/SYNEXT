@@ -1,5 +1,3 @@
-import ChiSiamoButton from "../button/button";
-
 const HeaderText: React.FC = (): React.ReactElement => {
   return (
     <div className="header__text-box">
