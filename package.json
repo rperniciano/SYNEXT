@@ -10,11 +10,13 @@
     "compile:sass": "node-sass Sass/main.scss css/style.css -w"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^2.2.7",
     "next": "14.0.3",
     "next-videos": "1.4.1",
     "node-sass": "^9.0.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-redux": "^9.1.2"
   },
   "devDependencies": {
     "@types/node": "^20",

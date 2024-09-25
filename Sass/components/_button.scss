@@ -101,6 +101,8 @@
 
 .btn-text {
   text-decoration: underline;
+  cursor: pointer;
+  color: $primary-color-dark;
   &:link,
   &:visited {
     display: inline-block;
