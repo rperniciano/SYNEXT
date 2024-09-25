@@ -11,12 +11,6 @@ const Popup = () => {
   const { visible, title, description } = modalState;
   const dispatch = useDispatch();
 
-  if (visible) {
-    window.document.body.style.overflowY = 'hidden';
-  } else {
-    window.document.body.style.overflowY = 'auto';
-  }
-
   return (
     <div
       className={(visible && "popup u-visible") || "popup u-hidden"}
@@ -26,6 +20,7 @@ const Popup = () => {
           type: "SET_VISIBLE",
           payload: false,
         });
+        window.document.body.style.overflowY = "auto";
       }}
     >
       <div className="popup__content">
@@ -46,6 +41,7 @@ const Popup = () => {
                 type: "SET_VISIBLE",
                 payload: false,
               });
+              window.document.body.style.overflowY = "auto";
             }}
           >
             x
@@ -65,6 +61,7 @@ const Popup = () => {
                 type: "SET_VISIBLE",
                 payload: false,
               });
+              window.document.body.style.overflowY = "auto";
             }}
           >
             chiudi

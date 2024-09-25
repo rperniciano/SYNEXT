@@ -28,7 +28,6 @@ const Card = ({ paragraph, children, author }: Props) => {
     });
   };
 
-
   return (
     <div className="testimonial-card u-margin-inline-small u-margin-top-big">
       {children}
@@ -37,8 +36,11 @@ const Card = ({ paragraph, children, author }: Props) => {
         <a
           className="btn-text"
           onClick={() => {
-            console.log("cliccato");
-            handleOpenModal("Da paesino sardo a guru del web: la mia storia di reinvenzione", descrizioneMichi);
+            handleOpenModal(
+              "Da paesino sardo a guru del web: la mia storia di reinvenzione",
+              descrizioneMichi
+            );
+            window.document.body.style.overflowY = "hidden";
           }}
         >
           {author}, full story
