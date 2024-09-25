@@ -12,9 +12,9 @@ const Popup = () => {
   const dispatch = useDispatch();
 
   if (visible) {
-    document.body.style.overflowY = "hidden";
+    window.document.body.style.overflowY = 'hidden';
   } else {
-    document.body.style.overflowY = "auto";
+    window.document.body.style.overflowY = 'auto';
   }
 
   return (
