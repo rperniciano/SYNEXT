@@ -1,5 +1,5 @@
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
-import Immagine from "../image/michipopup.jpg"
+import Immagine from "../image/michipopup.jpg";
 import Image from "next/image";
 
 const Popup = () => {
@@ -15,7 +15,11 @@ const Popup = () => {
     <div className={(visible && "popup u-visible") || "popup"} id="popup">
       <div className="popup__content">
         <div className="popup__left">
-          <Image src={Immagine} alt="michi deiana" className="popup__img"></Image>
+          <Image
+            src={Immagine}
+            alt="michi deiana"
+            className="popup__img"
+          ></Image>
         </div>
         <div className="popup__right">
           <a
@@ -31,12 +35,26 @@ const Popup = () => {
           >
             x
           </a>
-          <h2 className="heading-secondary heading-secondary__popup u-margin-bottom-small">{title}</h2>
+          <h2 className="heading-secondary heading-secondary__popup u-margin-bottom-small">
+            {title}
+          </h2>
           <h3 className="heading-tertiary heading-tertiary__popup u-margin-bottom-small">
             Important – Please read before booking
           </h3>
           <p className="popup__text u-margin-bottom-medium">{description}</p>
-          {/* <button className="btn btn-green">Book Now</button> */}
+          <a
+            href="#section-testimonials"
+            className="popup__text-close popup__text"
+            onClick={() => {
+              console.log("cliccato");
+              dispatch({
+                type: "SET_VISIBLE",
+                payload: false,
+              });
+            }}
+          >
+            chiudi
+          </a>
         </div>
       </div>
     </div>

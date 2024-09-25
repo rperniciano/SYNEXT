@@ -15,7 +15,7 @@
     &__close{
         &:link,
         &:visited{
-            color: $color-grey-dark;
+            color: $color-black;
             position: absolute;
             top: 2.5rem;
             right:2.5rem;
@@ -24,6 +24,9 @@
             display: inline-block;
             transition: all .2s;
             line-height: 1;
+            @include respond(tab-port){
+                font-size: 4rem;
+            }
         }
 
         &:hover{
@@ -93,6 +96,11 @@
         -ms-hyphens: auto;
         -webkit-hyphens: auto;
         hyphens: auto;
+
+        &-close{
+            color: $primary-color-dark;
+        }
+
         @include respond (tab-port){
             font-size: 4rem;
         }
