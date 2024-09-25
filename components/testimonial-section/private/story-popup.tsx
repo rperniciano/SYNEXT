@@ -11,8 +11,20 @@ const Popup = () => {
   const { visible, title, description } = modalState;
   const dispatch = useDispatch();
 
+  visible === true ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'auto';
+
   return (
-    <div className={(visible && "popup u-visible") || "popup"} id="popup">
+    <div
+      className={(visible && "popup u-visible") || "popup u-hidden"}
+      id="popup"
+      onClick={() => {
+        dispatch({
+          type: "SET_VISIBLE",
+          payload: false,
+        });
+
+      }}
+    >
       <div className="popup__content">
         <div className="popup__left">
           <Image
@@ -46,7 +58,6 @@ const Popup = () => {
             href="#section-testimonials"
             className="popup__text-close popup__text"
             onClick={() => {
-              console.log("cliccato");
               dispatch({
                 type: "SET_VISIBLE",
                 payload: false,
