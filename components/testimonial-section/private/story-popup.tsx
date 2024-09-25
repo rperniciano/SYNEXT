@@ -1,17 +1,24 @@
 import { shallowEqual, useDispatch, useSelector } from "react-redux";
+import Immagine from "../image/michipopup.jpg"
+import Image from "next/image";
 
 const Popup = () => {
   //0 non visibile, 1 visibile
-  const modalState = useSelector((state: any) => state.rootReducer.modal, shallowEqual);
+  const modalState = useSelector(
+    (state: any) => state.rootReducer.modal,
+    shallowEqual
+  );
   const { visible, title, description } = modalState;
   const dispatch = useDispatch();
 
-  console.log("calling", modalState,visible && "popup u-visible");
+  console.log("calling", modalState, visible && "popup u-visible");
 
   return (
     <div className={(visible && "popup u-visible") || "popup"} id="popup">
       <div className="popup__content">
-        <div className="popup__left">{/* <Image src={}></Image> */}</div>
+        <div className="popup__left">
+          <Image src={Immagine} alt="michi deiana" className="popup__img"></Image>
+        </div>
         <div className="popup__right">
           <a
             href="#section-testimonials"
@@ -26,8 +33,8 @@ const Popup = () => {
           >
             x
           </a>
-          <h2 className="heading-secondary u-margin-bottom-small">{title}</h2>
-          <h3 className="heading-tertiary u-margin-bottom-small">
+          <h2 className="heading-secondary heading-secondary__popup u-margin-bottom-small">{title}</h2>
+          <h3 className="heading-tertiary heading-tertiary__popup u-margin-bottom-small">
             Important – Please read before booking
           </h3>
           <p className="popup__text u-margin-bottom-medium">{description}</p>

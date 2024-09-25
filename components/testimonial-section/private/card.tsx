@@ -38,7 +38,7 @@ const Card = ({ paragraph, children, author }: Props) => {
           className="btn-text"
           onClick={() => {
             console.log("cliccato");
-            handleOpenModal("mic", descrizioneMichi);
+            handleOpenModal("Da paesino sardo a guru del web: la mia storia di reinvenzione", descrizioneMichi);
           }}
         >
           {author}, full story
