@@ -20,7 +20,7 @@ const Popup = () => {
           type: "SET_VISIBLE",
           payload: false,
         });
-        globalThis.document.body.style.overflowY = 'auto';
+        document.body.style.overflowY = 'auto';
       }}
     >
       <div className="popup__content">
@@ -41,7 +41,7 @@ const Popup = () => {
                 type: "SET_VISIBLE",
                 payload: false,
               });
-              globalThis.document.body.style.overflowY = 'auto';
+              document.body.style.overflowY = 'auto';
             }}
           >
             x
@@ -61,7 +61,7 @@ const Popup = () => {
                 type: "SET_VISIBLE",
                 payload: false,
               });
-              globalThis.document.body.style.overflowY = 'auto';
+              document.body.style.overflowY = 'auto';
             }}
           >
             chiudi

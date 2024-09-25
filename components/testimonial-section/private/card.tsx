@@ -40,7 +40,7 @@ const Card = ({ paragraph, children, author }: Props) => {
               "Da paesino sardo a guru del web: la mia storia di reinvenzione",
               descrizioneMichi
             );
-            globalThis.document.body.style.overflowY = 'hidden';
+            document.body.style.overflowY = 'hidden';
           }}
         >
           {author}, full story
