@@ -11,7 +11,11 @@ const Popup = () => {
   const { visible, title, description } = modalState;
   const dispatch = useDispatch();
 
-  visible === true ? document.body.style.overflowY = 'hidden' : document.body.style.overflowY = 'auto';
+  if (visible) {
+    document.body.style.overflowY = "hidden";
+  } else {
+    document.body.style.overflowY = "auto";
+  }
 
   return (
     <div
@@ -22,7 +26,6 @@ const Popup = () => {
           type: "SET_VISIBLE",
           payload: false,
         });
-
       }}
     >
       <div className="popup__content">
