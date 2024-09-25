@@ -11,8 +11,6 @@ const Popup = () => {
   const { visible, title, description } = modalState;
   const dispatch = useDispatch();
 
-  console.log("calling", modalState, visible && "popup u-visible");
-
   return (
     <div className={(visible && "popup u-visible") || "popup"} id="popup">
       <div className="popup__content">
